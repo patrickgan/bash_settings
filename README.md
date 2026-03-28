@@ -1,5 +1,5 @@
 # bash_settings
-My personal bash settings
+My personal bash/terminal settings
 
 ### .bashrc modifications
 Save this to `.bash_functions`
@@ -31,3 +31,22 @@ I add these lines to my `.bash_aliases` file. Don't do this if you have scripts 
 alias ipython='ipython3'
 alias python='python3'
 ```
+
+### Tmux
+These are my tmux settings. Add these to `.tmux.conf`.
+```
+set -g mouse on
+set -g xterm-keys on
+
+bind-key -T prefix C-b source-file ~/.tmux.conf \; display "Loaded ~/.tmux.conf"
+```
+
+### Vim
+Edit `.vimrc`.
+```
+set mouse=a
+set tabstop=4
+set shiftwidth=4
+set expandtab
+set number
+``
