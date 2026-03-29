@@ -2,7 +2,7 @@
 My personal bash/terminal settings
 
 ### .bashrc modifications
-Save this to `.bash_functions`
+Save this to `.bash_functions` to create a command to parse your git branch. I call it later on in `.bashrc` to display my branch with my prompt.
 ```
 #!/usr/bin/bash
 
@@ -18,10 +18,9 @@ if [ -f ~/.bash_functions ]; then
 fi
 ```
 
-Add these into .bashrc as well.
+Add this into .bashrc as well.
 ```
 force_color_prompt=yes
-git_branch_status=yes
 ```
 
 Add the following to your prompt, also typically somewhere in `.bashrc`.
