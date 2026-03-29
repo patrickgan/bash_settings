@@ -18,6 +18,12 @@ if [ -f ~/.bash_functions ]; then
 fi
 ```
 
+Add these into .bashrc as well.
+```
+force_color_prompt=yes
+git_branch_status=yes
+```
+
 Add the following to your prompt, also typically somewhere in `.bashrc`.
 ```
 PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[91m\]$(parse_git_branch)\[\033[00m\]\$ '
